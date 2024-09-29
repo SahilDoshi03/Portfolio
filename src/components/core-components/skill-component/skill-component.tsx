@@ -4,7 +4,7 @@ import { CSSProperties } from "react";
 
 type SkillComponentProps = {
   img: string | StaticImport;
-  height: number;
+  height?: number;
   width: number;
   value: number;
   stack: string;

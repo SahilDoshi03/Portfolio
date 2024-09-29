@@ -38,8 +38,8 @@ export default function Home() {
         />
       </div>
       {/* <div
-        className={`h-[100rem] w-[100rem] absolute left-[-40rem] bottom-[40rem] md:overflow-hidden md:rounded-full md:border md:border-[2px] 
-                md:border-white outline outline-[1px] outline-offset-[10rem] outline-gray-100/25 z-10`}
+        className={`h-[30rem] w-[60rem] absolute left-[-10rem] bottom-[20rem] md:overflow-hidden md:rounded-full md:border md:border-[2px] 
+                md:border-white outline outline-[1px] outline-offset-[2rem] outline-gray-100/25 z-10 -rotate-[70deg]`}
       >
         <video
           autoPlay
@@ -48,7 +48,7 @@ export default function Home() {
           loop
           className="w-full h-full object-cover"
         >
-          <source src="/assets/videos/projects1-bg.mp4" type="video/mp4" />
+          <source src="/assets/videos/main-bg-2.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div> */}

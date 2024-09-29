@@ -2,7 +2,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <div className="flex items-center justify-center md:justify-start md:items-end h-screen text-primaryLight relative">
+    <div id="info" className="flex items-center justify-center md:justify-start md:items-end h-screen text-primaryLight relative">
 
       <section
         className="flex flex-col gap-4 w-[35rem] md:ml-[10vw] md:mb-[10rem] p-[2.5rem] z-10 bg-secondaryDark rounded-xl 
