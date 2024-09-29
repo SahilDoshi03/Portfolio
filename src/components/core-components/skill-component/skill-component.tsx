@@ -32,9 +32,7 @@ export const SkillComponent = ({
 
     return <div key={i} style={lineStyle}></div>;
   });
-  if (stack === "Express.js") {
-    console.log(width);
-  }
+
   return (
     <div className="relative w-[300px] h-[300px]">
       <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
