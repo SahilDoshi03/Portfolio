@@ -1,6 +1,6 @@
 "use client";
 
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -25,7 +25,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`${navbarColor} _container_padding_x fixed w-screen flex items-center justify-between py-[.5rem] text-white z-50 transition-colors duration-500`}>
+    <nav
+      className={`${navbarColor} _container_padding_x fixed w-screen flex items-center justify-between py-[.5rem] text-white z-50 transition-colors duration-500`}
+    >
       {/* logo */}
       <div className="flex items-center gap-[4vw]">
         <div className="flex items-center gap-3">
@@ -34,8 +36,12 @@ const Navbar = () => {
         </div>
         {/* nav buttons */}
         <ul className="_nav_text flex gap-10">
-          <li>Info</li>
-          <li>Skills</li>
+          <li>
+            <Link href="/">Info</Link>
+          </li>
+          <li>
+            <Link href="#skills">Skills</Link>
+          </li>
           <li>Experience</li>
           <li>Contact</li>
         </ul>

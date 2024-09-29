@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
+import Navbar from "@/components/composite-components/navbar/Navbar";
 import "./globals.css";
 
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["100","300","400","500","700","900"]
+  weight: ["100", "300", "400", "500", "700", "900"],
 });
 
 export const metadata: Metadata = {
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-primaryDark">
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
