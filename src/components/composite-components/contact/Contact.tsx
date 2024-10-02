@@ -1,7 +1,7 @@
 import { CiMail, CiLocationOn, CiPhone } from "react-icons/ci";
 const Contact = () => {
     return (
-        <div id="contact" className="_container_padding_top px-[4rem] bg-[url('/assets/images/contact-bg.jpg')] bg-center bg-cover text-primaryLight">
+        <div id="contact" className="_container_padding_top px-[1rem] md:px-[2rem] lg:px-[4rem] bg-[url('/assets/images/contact-bg.jpg')] bg-center bg-cover text-primaryLight">
             <div className="rounded-2xl px-[calc(max(1rem,10vw-4rem))] backdrop-blur-sm bg-opacity-20">
                 <div className="flex items-center gap-3">
                     <span className="_section_heading">Contact</span>
