@@ -109,3 +109,7 @@ textarea:not([rows]) {
 ._container_padding_top {
   @apply pt-[5vw];
 }
+
+._section_heading {
+  @apply text-[3rem] md:text-[4rem] tracking-wide;
+}

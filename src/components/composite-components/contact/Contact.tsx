@@ -4,7 +4,7 @@ const Contact = () => {
         <div id="contact" className="_container_padding_top px-[4rem] bg-[url('/assets/images/contact-bg.jpg')] bg-center bg-cover text-primaryLight">
             <div className="rounded-2xl px-[calc(10vw-4rem)] backdrop-blur-sm bg-opacity-20">
                 <div className="flex items-center gap-3">
-                    <span className="text-[4rem] tracking-wide">Contact</span>
+                    <span className="_section_heading">Contact</span>
                     <div className="w-4 h-4 bg-accent rounded-full translate-y-2"></div>
                 </div>
                 <section>
