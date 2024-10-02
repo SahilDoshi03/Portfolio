@@ -107,7 +107,7 @@ textarea:not([rows]) {
 }
 
 ._container_padding_top {
-  @apply pt-[5vw];
+  @apply pt-[4vw];
 }
 
 ._section_heading {

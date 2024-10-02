@@ -8,7 +8,7 @@ const Projects = () => {
                 <div className="w-4 h-4 bg-accent rounded-full translate-y-2"></div>
             </div>
             <div className="_container_padding_top w-full flex items-stretch justify-evenly text-primaryLight">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="flex flex-wrap">
                     <ProjectsCard />
                     <ProjectsCard />
                     <ProjectsCard />
