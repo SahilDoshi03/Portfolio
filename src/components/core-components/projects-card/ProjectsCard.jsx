@@ -6,7 +6,7 @@ import Image from "next/image";
 const ProjectsCard = () => {
   return (
     <div
-      className="group flex flex-col sm:flex-row gap-[1rem] w-full p-[1.25rem] -translate-x-[1.25rem] hover:bg-white/[0.05] 
+      className="group flex flex-col sm:flex-row gap-[1rem] w-full py-[1.25rem] hover:px-[1.25rem] hover:bg-white/[0.05] 
             transition-all duration-300 hover:shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.02)] hover:drop-shadow-lg"
     >
       <Image
