@@ -8,6 +8,18 @@ import Projects from "@/components/composite-components/projects/Projects";
 
 export default function Home() {
   const [rotation, setRotation] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,10 +38,13 @@ export default function Home() {
     <div className="relative overflow-x-hidden">
       <div
         style={{
-          transform: `translateX(30vw) translateY(5rem) rotate(${rotation}deg)`,
+          transform:
+            windowWidth >= 768
+              ? `translateX(30vw) translateY(5rem) rotate(${rotation}deg)`
+              : "",
         }}
-        className={`absolute md:overflow-hidden md:rounded-full md:border md:border-[2px] 
-                md:border-white outline outline-[1px] outline-offset-[10rem] outline-gray-100/25 z-10`}
+        className={`max-md:h-screen absolute md:overflow-hidden md:rounded-full md:border md:border-[2px] 
+                md:border-white md:outline outline-[1px] outline-offset-[10rem] outline-gray-100/25 z-10`}
       >
         <img
           src="/assets/images/abstract.jpg"
