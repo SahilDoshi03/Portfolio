@@ -51,7 +51,7 @@ export default function Home() {
                 md:border-white md:outline outline-[1px] outline-offset-[10rem] outline-gray-100/25 z-10`}
         >
           <img
-            src="/assets/images/abstract.jpg"
+            src="/assets/images/abstract.webp"
             alt="Circle Image"
             className="w-full h-full object-cover"
           />
