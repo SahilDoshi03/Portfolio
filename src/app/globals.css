@@ -103,7 +103,7 @@ textarea:not([rows]) {
 }
 
 ._container_padding_y {
-  @apply py-[5vw];
+  @apply py-[4vw];
 }
 
 ._container_padding_top {
