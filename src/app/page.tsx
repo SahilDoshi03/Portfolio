@@ -7,8 +7,9 @@ import Contact from "@/components/composite-components/contact/Contact";
 import Projects from "@/components/composite-components/projects/Projects";
 
 export default function Home() {
+  const isSSR = typeof window === "undefined";
   const [rotation, setRotation] = useState(0);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(isSSR ? 0 : window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => {

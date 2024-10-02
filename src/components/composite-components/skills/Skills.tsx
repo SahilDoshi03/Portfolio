@@ -16,7 +16,7 @@ const Skills = () => {
           <span className="text-[4rem] tracking-wide">Skills</span>
           <div className="w-4 h-4 bg-accent rounded-full translate-y-2"></div>
         </div>
-        <div className="flex _container_padding_top w-full flex flex-wrap items-center gap-[6rem]">
+        <div className="flex _container_padding_top w-full flex flex-wrap items-center justify-center gap-[6rem]">
           <SkillComponent
             img={nextLogo}
             width={150}
