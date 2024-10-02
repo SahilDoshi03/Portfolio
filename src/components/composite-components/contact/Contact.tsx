@@ -10,7 +10,7 @@ const Contact = () => {
                 <section>
                     <div className="py-[5vw] mx-auto">
                         <div className="flex flex-col gap-[2rem]">
-                            <div className="flex justify-start gap-[4rem]">
+                            <div className="flex flex-wrap justify-start gap-[4rem]">
                                 <div className="flex items-center gap-4">
                                     <div className="flex items-center justify-center h-[3rem] w-[3rem] bg-white rounded-full text-black">
                                         <CiMail size={35} />
