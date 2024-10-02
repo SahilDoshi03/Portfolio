@@ -6,13 +6,13 @@ import Image from "next/image";
 const ProjectsCard = () => {
   return (
     <div
-      className="group flex sm:flex-row gap-[1rem] w-full py-[1.25rem] hover:bg-white/[0.05] 
+      className="group flex flex-col sm:flex-row gap-[1rem] w-full py-[1.25rem] hover:bg-white/[0.05] 
             transition-all duration-300 hover:shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.02)] hover:drop-shadow-lg"
     >
       <Image
         src={venturingVibes}
         alt="Project Image"
-        className="w-[10rem] md:w-[15rem] lg:w-[20rem] xl:w-[25rem] 2xl:w-[30rem] border"
+        className="sm:w-[15rem] lg:w-[20rem] xl:w-[25rem] 2xl:w-[30rem] border"
         style={{ objectFit: "cover" }}
       />
       <div className="flex flex-col justify-between gap-[1rem]">
