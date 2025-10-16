@@ -113,3 +113,10 @@ textarea:not([rows]) {
 ._section_heading {
   @apply text-[3rem] md:text-[4rem] tracking-wide;
 }
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #0D0D0D inset; /* same as bg-primaryDark */
+  -webkit-text-fill-color: #d1d5db; /* same as text-gray-300 */
+}
+
