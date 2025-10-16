@@ -6,7 +6,24 @@ import reduxLogo from "@/../../public/assets/images/icons/redux-logo.svg";
 import mongoLogo from "@/../../public/assets/images/icons/mongo-logo.svg";
 import graphqlLogo from "@/../../public/assets/images/icons/graphql-logo.svg";
 import tailwindLogo from "@/../../public/assets/images/icons/tailwind-logo.svg";
+import golangLogo from "@/../../public/assets/images/icons/golang-logo.svg";
+import awsLogo from "@/../../public/assets/images/icons/aws-logo.svg";
+import dockerLogo from "@/../../public/assets/images/icons/docker-logo.svg";
 import { SkillComponent } from "@/components/core-components/skill-component/skill-component";
+
+const skillsData = [
+  { img: nextLogo, width: 150, value: 90, stack: "Next.js" },
+  { img: reactLogo, width: 100, value: 95, stack: "React.js" },
+  { img: expressLogo, width: 200, value: 90, stack: "Express.js" },
+  { img: nodeLogo, width: 120, value: 85, stack: "Node.js" },
+  { img: reduxLogo, width: 100, value: 80, stack: "Redux" },
+  { img: mongoLogo, width: 50, value: 80, stack: "MongoDB" },
+  { img: graphqlLogo, width: 110, value: 75, stack: "GraphQL" },
+  { img: tailwindLogo, width: 120, value: 95, stack: "Tailwind" },
+  { img: golangLogo, width: 200, value: 75, stack: "Golang" },
+  { img: dockerLogo, width: 100, value: 75, stack: "Docker" },
+  { img: awsLogo, width: 100, value: 45, stack: "AWS" },
+];
 
 const Skills = () => {
   return (
@@ -16,55 +33,16 @@ const Skills = () => {
           <span className="_section_heading">Skills</span>
           <div className="w-4 h-4 bg-accent rounded-full translate-y-2"></div>
         </div>
-        <div className="flex _container_padding_top w-full flex flex-wrap items-center justify-center gap-[6rem]">
-          <SkillComponent
-            img={nextLogo}
-            width={150}
-            value={90}
-            stack="Next.js"
-          />
-          <SkillComponent
-            img={reactLogo}
-            width={100}
-            value={95}
-            stack="React.js"
-          />
-          <SkillComponent
-            img={expressLogo}
-            width={200}
-            value={85}
-            stack="Express.js"
-          />
-          <SkillComponent
-            img={nodeLogo}
-            width={120}
-            value={80}
-            stack="Node.js"
-          />
-          <SkillComponent
-            img={reduxLogo}
-            width={100}
-            value={80}
-            stack="Redux"
-          />
-          <SkillComponent
-            img={mongoLogo}
-            width={50}
-            value={80}
-            stack="MongoDB"
-          />
-          <SkillComponent
-            img={graphqlLogo}
-            width={110}
-            value={75}
-            stack="GraphQL"
-          />
-          <SkillComponent
-            img={tailwindLogo}
-            width={120}
-            value={95}
-            stack="Tailwind"
-          />
+        <div className="flex _container_padding_top w-full flex-wrap items-center justify-center gap-[6rem]">
+          {skillsData.map((skill) => (
+            <SkillComponent
+              key={skill.stack}
+              img={skill.img}
+              width={skill.width}
+              value={skill.value}
+              stack={skill.stack}
+            />
+          ))}
         </div>
       </div>
     </div>

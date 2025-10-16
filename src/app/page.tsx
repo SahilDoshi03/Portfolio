@@ -68,7 +68,7 @@ export default function Home() {
         Your browser does not support the video tag.
       </video>
 
-      <main className="relative overflow-y-scroll z-20">
+      <main className="relative z-20">
         <Hero />
         <Skills />
         <Projects />
