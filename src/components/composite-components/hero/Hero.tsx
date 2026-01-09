@@ -19,14 +19,13 @@ const Hero = () => {
           </h3>
         </div>
         <p className="text-[.9rem] lg:text-[1rem] text-justify tracking-wide font-[100]">
-          I’m a versatile software developer based in Mumbai, India, with
-          extensive expertise in MERN stack development. Check out my projects
-          to see how I transform concepts into engaging applications. Let’s
-          connect and explore how we can work together to bring your ideas to
-          fruition!
+          I am a Software Developer based in Mumbai,India. I specialize in building scalable, 
+          high-performance web applications. Experienced in modern frameworks for Full-Stack
+          Development, AI-integrations, CI/CD pipelines and cloud services, with a track record of delivering
+          robust, production-ready solutions.
         </p>
         <div className="flex gap-[1.5rem]">
-          <BsGithub size={30}/>
+          <BsGithub size={30} />
           <BsLinkedin size={30} />
         </div>
       </section>
