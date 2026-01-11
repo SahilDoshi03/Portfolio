@@ -84,7 +84,7 @@ const skillCategories = [
 
 const Skills = () => {
   return (
-    <div id="skills" className="sm:p-[4rem] text-primaryLight">
+    <div id="skills" className="sm:p-[2rem] md:p-[4rem] text-primaryLight">
       <div className="rounded-2xl p-[calc(10vw-4rem)] _container_padding_top bg-primaryDark bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-40">
         <div className="max-sm:p-[4rem] flex items-center gap-3 mb-10">
           <span className="_section_heading">Skills</span>
@@ -97,7 +97,7 @@ const Skills = () => {
               <h3 className="text-2xl font-semibold text-secondaryLight pl-4 border-l-4 border-accent">
                 {category.title}
               </h3>
-              <div className="flex w-full flex-wrap items-center justify-start gap-[3rem]">
+              <div className="flex w-full flex-wrap items-center justify-center lg:justify-start gap-[3rem]">
                 {category.skills.map((skill) => (
                   <SkillComponent
                     key={skill.stack}
